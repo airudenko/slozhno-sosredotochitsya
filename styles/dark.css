@@ -1,12 +1,60 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+
+:root.theme-dark {
+  --title-color: #db00ff;
+  --subtitle-color: #000028;
+  --accent-color: #ff0070;
+  --bacground-color: #000028;
+}
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-image: url(../images/cover-image-dark.png);
+}
+
+.decoration-elements.theme_dark:before {
+  border-inline-end: 1px solid #ff0070;
+  border-top: 1px solid #ff0070;
+}
+
+.decoration-elements.theme_dark:after {
+  border-inline-start: 1px solid #ff0070;
+  border-bottom: 1px solid #ff0070;
+}
+
+.header__decoration-conteiner-circle.theme_dark::after {
+  border: 1px solid #ff0070;
+  background-color: #ff0070;
+}
+
+.header__theme-menu-button.theme_dark {
+  color: #ff0070;
+}
+.header__theme-menu-button_active.theme_dark {
+  outline: 1px solid #ff0070;
+}
+
+.section__cards-title.theme_dark {
+  color: #ff0070;
+}
+.section__cards-text.theme_dark {
+  color: #f1b2ce;
+}
+
+button.theme_dark:focus-visible {
+  color: #ff0070;
+}
+
+a.theme_dark:focus-visible {
+  outline: 1px solid #f1b2ce;
+}
+
+button.theme_dark:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+a.theme_dark:hover {
+  text-decoration: underline #f1b2ce;
 }

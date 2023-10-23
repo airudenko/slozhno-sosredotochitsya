@@ -1,12 +1,115 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+
+:root.theme-light {
+  /* Переменные светлой темы */
+  --title-color: #ffc2e6;
+  --subtitle-color: #353430;
+  --accent-color: #ff8dcb;
+  --bacground-color: #fff1f7;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --title-color: #ffc2e6;
+    --subtitle-color: #353430;
+    --accent-color: #ff8dcb;
+    --bacground-color: #fff1f7;
+  }
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
+  .header__decoration-conteiner {
+    visibility: hidden;
+  }
+
+  .decoration-elements:before {
+  border-inline-end: 1px solid var(--subtitle-color,#353430);
+  border-top: 1px solid var(--subtitle-color,#353430);
+}
+
+.decoration-elements:after {
+  border-inline-start: 1px solid var(--subtitle-color,#353430);
+  border-bottom: 1px solid var(--subtitle-color,#353430);
+}
+
+.header__theme-menu-button{
+  color:var(--subtitle-color,);
+}
+.header__theme-menu-button_active {
+  outline: 1px solid var(--subtitle-color,#353430);
+}
+
+.section__cards-title {
+  color: var(--subtitle-color,#353430);
+}
+.section__cards-text {
+  color: var(--subtitle-color,#353430);
+}
+
+button:focus-visible {
+  color:var(--subtitle-color,#353430);
+}
+
+a:focus-visible {
+  outline: 1px solid var(--subtitle-color,#353430);
+}
+
+button:hover {
+  outline: 1px solid rgba(50, 49, 45, 0.40);
+}
+
+a:hover {
+  text-decoration: underline var(--subtitle-color,#353430);
+}
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-image: url(../images/cover-image-light.png);
+}
+
+.header__decoration-conteiner.theme_light {
+    visibility: hidden;
+  }
+
+  .decoration-elements.theme_light:before {
+  border-inline-end: 1px solid #353430;
+  border-top: 1px solid #353430;
+}
+
+.decoration-elements.theme_light:after {
+  border-inline-start: 1px solid #353430;
+  border-bottom: 1px solid #353430;
+}
+
+.header__theme-menu-button.theme_light{
+  color:var(--subtitle-color,);
+}
+.header__theme-menu-button_active.theme_light {
+  outline: 1px solid #353430;
+}
+
+.section__cards-title.theme_light {
+  color: #353430;
+}
+.section__cards-text.theme_light {
+  color: #353430;
+}
+
+button.theme_light:focus-visible {
+  color:#353430;
+}
+
+a.theme_light:focus-visible {
+  outline: 1px solid #353430;
+}
+
+button.theme_light:hover {
+  outline: 1px solid rgba(50, 49, 45, 0.40);
+}
+
+a.theme_light:hover {
+  text-decoration: underline #353430;
 }

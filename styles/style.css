@@ -1,5 +1,502 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  min-inline-size: 375px;
+  max-inline-size: 1024px;
+  background-image: url(../images/cover-image-dark.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  padding: 20px 20px 39px 20px;
+  min-width: 1024px;
+}
+
+.decoration-elements {
+  position: relative;
+  text-decoration: none;
+}
+
+.decoration-elements:before,
+.decoration-elements:after {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  content: "";
+  opacity: 2;
+  z-index: -1;
+}
+
+.decoration-elements:before {
+  right: 0;
+  top: 0;
+  z-index: 1;
+  padding-left: 15px;
+  border-inline-end: 1px solid #ff0070;
+  border-top: 1px solid #ff0070;
+}
+
+.decoration-elements:after {
+  left: 10;
+  bottom: 8;
+  z-index: 1;
+  border-inline-start: 1px solid #ff0070;
+  border-bottom: 1px solid #ff0070;
+}
+
+.header__theme-conteiner {
+  display: flex;
+  justify-content: center;
+  gap: 31.9%;
+}
+
+.header__theme-menu-list {
+  padding-inline-start: 360px;
+  display: flex;
+  gap: 27px;
+}
+
+.header__theme-menu-button {
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: 18px;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.header__decoration-conteiner {
+  display: flex;
+  position: relative;
+}
+.header__decoration-conteiner-text {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.header__theme-menu-button,
+.header__decoration-conteiner-text {
+  color: #ff0070;
+}
+
+.header__decoration-conteiner-circle::after {
+  content: "";
+  position: absolute;
+  left: 41px;
+  top: 7px;
+  border: 1px solid #ff0070;
+  border-radius: 9px;
+  width: 13px;
+  height: 13px;
+  background-color: #ff0070;
+  filter: blur(2px);
+}
+
+.header__text {
+  padding-block-start: 24%;
+  display: grid;
+  grid-template-columns: 1fr 491px;
+  grid-template-areas:
+    "header header"
+    "- text";
+  padding-block-end: 90px;
+  gap: 280px;
+}
+
+.header__title {
+  position: absolute;
+  left: -17px;
+  top: 265px;
+  grid-area: header;
+  font-family: IBM Plex Mono;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 #ff0070;
+}
+
+.header__subtitle {
+  grid-area: text;
+  font-size: 18px;
+  font-family: IBM Plex Mono;
+  min-width: 364px;
+  font-weight: 700;
+}
+
+.header__subtitle,
+.section__cards-subtitle {
+  color: var(--subtitle-color);
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+}
+
+.section {
+  padding: 66px 20px 20px 20px;
+  min-width: 1011px;
+}
+
+.section,
+.footer {
+  background-color: var(--bacground-color);
+}
+
+.section__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
+}
+
+.section__cards-one {
+  display: flex;
+  gap: 20px;
+}
+
+.section__cards-title {
+  color: #ff0070;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  min-width: 314.96px;
+}
+
+.section__cards-conteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.section__cards-desc {
+  min-width: 315px;
+}
+
+.section__cards-subtitle {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.section__cards-text {
+  color: #f1b2ce;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.padding-text {
+  padding-block-start: 8px;
+}
+
+.link-shadow {
+  text-shadow: 0 3px 0 var(--accent-color);
+}
+
+.section__cards-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.width {
+  gap: 21px;
+}
+
+.flex-direction {
+  display: flex;
+  flex-direction: row;
+}
+
+.section__cards-three {
+  display: flex;
+  gap: 21px;
+}
+
+.margin-text {
+  margin-block-end: 21px;
+}
+
+.font-weight {
+  font-weight: 400;
+}
+
+.styles {
+  margin-block-start: 82px;
+  margin-block-end: 20px;
+}
+
+.section__img {
+  max-width: 984px;
+  grid-auto-flow: dense;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, fr);
+  grid-template-rows: repeat(3, fr);
+  grid-template-areas:
+    "one one two"
+    "three four two"
+    "three five five";
+}
+
+.img-card-one {
+  grid-area: one;
+  max-width: 649px;
+}
+
+.img-card-two {
+  grid-area: two;
+}
+
+.img-card-three {
+  grid-area: three;
+  max-width: 315px;
+}
+
+.img-card-four {
+  grid-area: four;
+  max-width: 315px;
+}
+
+.img-card-five {
+  grid-area: five;
+  max-width: 649px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  min-width: 1024px;
+  padding: 64px 20px 40px 20px;
+}
+
+.footer__text {
+  color: var(--title-color);
+  font-family: IBM Plex Mono;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-weight: 700;
+  line-height: 82.5%;
+  text-align: center;
+  padding-block-start: 304px;
+  padding-block-end: 270px;
+  text-shadow: 4px 4px 0 #ff0070;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid #ff0070;
+  padding: 2px 13px 2px 13px;
+  pointer-events: none;
+}
+
+button:focus-visible {
+  color: #ff0070;
+  text-decoration: underline;
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 1px solid #f1b2ce;
+}
+
+button:hover {
+  text-decoration: none;
+  outline: 1px solid rgba(255, 0, 112, 0.4);
+  padding: 2px 13px 2px 13px;
+}
+
+a:hover {
+  text-decoration: underline #f1b2ce;
+}
+
+@media (768px <= width < 1024px) {
+  .header {
+    min-width: 375px;
+  }
+
+  .header__theme-conteiner {
+    flex-direction: column-reverse;
+    gap: 150px;
+    align-items: flex-end;
+  }
+
+  .header__theme-menu-list {
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .header__decoration-conteiner {
+    padding-right: 30px;
+  }
+
+  .header__text {
+    gap: 263px;
+    justify-items: end;
+    padding-block-end: 137px;
+    grid-template-columns: 1fr 37%;
+  }
+
+  .header__title {
+    padding-block-start: 154px;
+  }
+
+  .header__subtitle {
+    max-width: 354px;
+  }
+
+  .section {
+    min-width: 768px;
+  }
+
+  .section__cards-title {
+    min-width: 236px;
+  }
+
+  .width-title {
+    max-width: 236px;
+  }
+
+  .section__cards-two {
+    gap: 25px;
+  }
+
+  .flex-direction {
+    flex-direction: column;
+  }
+  .footer {
+    min-width: 768px;
+  }
+
+  .footer__text {
+    padding-block-start: 449px;
+    padding-block-end: 414px;
+  }
+}
+
+@media (375px <= width < 768px) {
+  .header {
+    min-width: 375px;
+    padding: 12px 12px 39px 11px;
+  }
+
+  .header__theme-conteiner {
+    flex-direction: column-reverse;
+    gap: 150px;
+    align-items: flex-end;
+  }
+
+  .header__theme-menu-list {
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .header__decoration-conteiner {
+    padding-right: 27px;
+  }
+
+  .header__theme-conteiner {
+    gap: 44px;
+  }
+
+  .header__text {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "text";
+    gap: 228px;
+    padding-block-end: 30px;
+  }
+
+  .header__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    left: 0;
+    top: 228px;
+    line-height: 80%;
+  }
+
+  .header__subtitle {
+    min-width: 353px;
+  }
+
+  .section {
+    padding: 36px 20px 20px 11px;
+    min-width: 353px;
+  }
+
+  .section__cards {
+    gap: 53px;
+  }
+
+  .section__cards-one {
+    flex-direction: column;
+  }
+  .section__cards-three {
+    flex-direction: column;
+  }
+
+  .section__cards-desc {
+    min-width: 356px;
+  }
+
+  .padding-text {
+    padding-block-start: 10px;
+  }
+
+  .flex-direction {
+    flex-direction: column;
+  }
+
+  .section__cards-title {
+    min-width: 355px;
+  }
+  .styles {
+    margin-block-start: 52px;
+    margin-block-end: 9px;
+  }
+
+  .section__gallery {
+    min-width: 354.999px;
+  }
+  .section__img {
+    gap: 12px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five";
+  }
+
+  img {
+    min-width: 354.999px;
+  }
+
+  .footer {
+    min-width: 375px;
+    padding: 23px 12px 34px 9px;
+  }
+
+  .footer__text {
+    padding-block-start: 278px;
+    padding-block-end: 248px;
+  }
 }
