@@ -14,6 +14,7 @@
 .header {
   padding: 20px 20px 39px 20px;
   min-width: 1024px;
+  height:100vh;
 }
 
 .decoration-elements {
@@ -173,7 +174,7 @@
 .section__cards-conteiner {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 22px;
 }
 
 .section__cards-desc {
@@ -223,7 +224,7 @@
 }
 
 .margin-text {
-  margin-block-end: 21px;
+  margin-block-end: 19px;
 }
 
 .font-weight {
@@ -372,7 +373,7 @@ a:hover {
   }
 
   .section__cards-two {
-    gap: 25px;
+    gap: 18px;
   }
 
   .flex-direction {
@@ -398,6 +399,7 @@ a:hover {
     flex-direction: column-reverse;
     gap: 150px;
     align-items: flex-end;
+    gap: 40px;
   }
 
   .header__theme-menu-list {
@@ -412,16 +414,12 @@ a:hover {
     padding-right: 27px;
   }
 
-  .header__theme-conteiner {
-    gap: 44px;
-  }
-
   .header__text {
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"
       "text";
-    gap: 228px;
+    gap: 230px;
     padding-block-end: 30px;
   }
 
@@ -437,7 +435,7 @@ a:hover {
   }
 
   .section {
-    padding: 36px 20px 20px 11px;
+    padding: 54px 20px 20px 11px;
     min-width: 353px;
   }
 
@@ -456,8 +454,20 @@ a:hover {
     min-width: 356px;
   }
 
+  .margin-bottom {
+    margin-bottom:-3px;
+  }
+
   .padding-text {
-    padding-block-start: 10px;
+    padding-block-start: 14px;
+  }
+
+  .padding-two{
+padding-top:10px;
+  }
+
+.padding-three{
+padding-top:11px;
   }
 
   .flex-direction {

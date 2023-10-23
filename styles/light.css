@@ -31,7 +31,7 @@
   border-bottom: 1px solid var(--subtitle-color,#353430);
 }
 
-.header__theme-menu-button{
+.header__theme-menu-button {
   color:var(--subtitle-color,);
 }
 .header__theme-menu-button_active {
@@ -84,7 +84,7 @@ a:hover {
   border-bottom: 1px solid #353430;
 }
 
-.header__theme-menu-button.theme_light{
+.header__theme-menu-button.theme_light {
   color:var(--subtitle-color,);
 }
 .header__theme-menu-button_active.theme_light {
