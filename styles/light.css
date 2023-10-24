@@ -1,4 +1,3 @@
-
 :root.theme-light {
   /* Переменные светлой темы */
   --title-color: #ffc2e6;
@@ -22,44 +21,44 @@
   }
 
   .decoration-elements:before {
-  border-inline-end: 1px solid var(--subtitle-color,#353430);
-  border-top: 1px solid var(--subtitle-color,#353430);
-}
+    border-inline-end: 1px solid var(--subtitle-color, #353430);
+    border-top: 1px solid var(--subtitle-color, #353430);
+  }
 
-.decoration-elements:after {
-  border-inline-start: 1px solid var(--subtitle-color,#353430);
-  border-bottom: 1px solid var(--subtitle-color,#353430);
-}
+  .decoration-elements:after {
+    border-inline-start: 1px solid var(--subtitle-color, #353430);
+    border-bottom: 1px solid var(--subtitle-color, #353430);
+  }
 
-.header__theme-menu-button {
-  color:var(--subtitle-color,);
-}
-.header__theme-menu-button_active {
-  outline: 1px solid var(--subtitle-color,#353430);
-}
+  .header__theme-menu-button {
+    color: var(--subtitle-color);
+  }
+  .header__theme-menu-button_active {
+    outline: 1px solid var(--subtitle-color, #353430);
+  }
 
-.section__cards-title {
-  color: var(--subtitle-color,#353430);
-}
-.section__cards-text {
-  color: var(--subtitle-color,#353430);
-}
+  .section__cards-title {
+    color: var(--subtitle-color, #353430);
+  }
+  .section__cards-text {
+    color: var(--subtitle-color, #353430);
+  }
 
-button:focus-visible {
-  color:var(--subtitle-color,#353430);
-}
+  button:focus-visible {
+    color: var(--subtitle-color, #353430);
+  }
 
-a:focus-visible {
-  outline: 1px solid var(--subtitle-color,#353430);
-}
+  a:focus-visible {
+    outline: 1px solid var(--subtitle-color, #353430);
+  }
 
-button:hover {
-  outline: 1px solid rgba(50, 49, 45, 0.40);
-}
+  button:hover {
+    outline: 1px solid rgba(50, 49, 45, 0.4);
+  }
 
-a:hover {
-  text-decoration: underline var(--subtitle-color,#353430);
-}
+  a:hover {
+    text-decoration: underline var(--subtitle-color, #353430);
+  }
 }
 
 .page.theme_light {
@@ -69,46 +68,46 @@ a:hover {
   */
 }
 
-.header__decoration-conteiner.theme_light {
-    visibility: hidden;
-  }
+.theme_light.header__decoration-conteiner {
+  visibility: hidden;
+}
 
-  .decoration-elements.theme_light:before {
+.theme_light.decoration-elements:before {
   border-inline-end: 1px solid #353430;
   border-top: 1px solid #353430;
 }
 
-.decoration-elements.theme_light:after {
+.theme_light.decoration-elements:after {
   border-inline-start: 1px solid #353430;
   border-bottom: 1px solid #353430;
 }
 
-.header__theme-menu-button.theme_light {
-  color:var(--subtitle-color,);
+.theme_light.header__theme-menu-button {
+  color: var(--subtitle-color);
 }
-.header__theme-menu-button_active.theme_light {
+.theme_light.header__theme-menu-button_active {
   outline: 1px solid #353430;
 }
 
-.section__cards-title.theme_light {
+.theme_light.section__cards-title {
   color: #353430;
 }
-.section__cards-text.theme_light {
+.theme_light.section__cards-text {
   color: #353430;
 }
 
-button.theme_light:focus-visible {
-  color:#353430;
+.theme_light button:focus-visible {
+  color: #353430;
 }
 
-a.theme_light:focus-visible {
+.theme_light a:focus-visible {
   outline: 1px solid #353430;
 }
 
-button.theme_light:hover {
-  outline: 1px solid rgba(50, 49, 45, 0.40);
+.theme_light button:hover {
+  outline: 1px solid rgba(50, 49, 45, 0.4);
 }
 
-a.theme_light:hover {
+.theme_light a:hover {
   text-decoration: underline #353430;
 }

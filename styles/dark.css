@@ -14,47 +14,48 @@
   background-image: url(../images/cover-image-dark.png);
 }
 
-.decoration-elements.theme_dark:before {
+.theme_dark.decoration-elements:before {
   border-inline-end: 1px solid #ff0070;
   border-top: 1px solid #ff0070;
 }
 
-.decoration-elements.theme_dark:after {
+.theme_dark.decoration-elements:after {
   border-inline-start: 1px solid #ff0070;
   border-bottom: 1px solid #ff0070;
 }
 
-.header__decoration-conteiner-circle.theme_dark::after {
+.theme_dark.header__decoration-conteiner-circle::after {
   border: 1px solid #ff0070;
   background-color: #ff0070;
 }
 
-.header__theme-menu-button.theme_dark {
+.theme_dark.header__theme-menu-button {
   color: #ff0070;
 }
-.header__theme-menu-button_active.theme_dark {
+.theme_dark.header__theme-menu-button_active {
   outline: 1px solid #ff0070;
 }
 
-.section__cards-title.theme_dark {
+.theme_dark.section__cards-title {
   color: #ff0070;
 }
-.section__cards-text.theme_dark {
+.theme_dark.section__cards-text {
   color: #f1b2ce;
 }
 
-button.theme_dark:focus-visible {
+.theme_dark button:focus-visible {
   color: #ff0070;
 }
 
-a.theme_dark:focus-visible {
+.theme_dark a:focus-visible {
   outline: 1px solid #f1b2ce;
 }
 
-button.theme_dark:hover {
+.theme_dark button:hover {
   outline: 1px solid rgba(255, 0, 112, 0.4);
 }
 
-a.theme_dark:hover {
+.theme_dark a:hover {
   text-decoration: underline #f1b2ce;
-}
+} 
+
