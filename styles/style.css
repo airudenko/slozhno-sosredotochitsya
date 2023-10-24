@@ -159,11 +159,6 @@
   padding-top: 10px;
 }
 
-.section,
-.footer {
-  background-color: var(--bacground-color);
-}
-
 .section__cards {
   display: flex;
   flex-direction: column;
