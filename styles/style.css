@@ -478,9 +478,9 @@ a:hover {
     min-width: 356px;
   }
 
-  .margin-bottom {
+  /* .margin-bottom {
     margin-bottom: -3px;
-  }
+  } */
 
   .padding-text {
     padding-block-start: 12px;
@@ -508,8 +508,10 @@ a:hover {
     min-width: 355px;
   }
   .styles {
-    margin-block-start: 52px;
-    margin-block-end: 9px;
+    /* margin-block-start: 52px; */
+     margin-block-start: 50px;
+    /* margin-block-end: 9px; */
+     margin-block-end: 8px;
   }
 
   .section__gallery {
