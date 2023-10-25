@@ -13,6 +13,44 @@
     --accent-color: #ff8dcb;
     --bacground-color: #fff1f7;
   }
+  
+  .page {
+  background-image: url(../images/cover-image-light.png);
+  }
+
+  .header__decoration-conteiner {
+  visibility: hidden;
+}
+
+.header__theme-menu-button,
+.section__cards-text,
+.section__cards-title
+{
+  color:var(--subtitle-color,#353430);
+}
+
+.decoration-elements:before {
+  border-inline-end: 1px solid var(--subtitle-color,#353430);
+    border-top: 1px solid var(--subtitle-color,#353430);
+}
+
+.decoration-elements:after {
+    border-inline-start: 1px solid var(--subtitle-color,#353430);
+    border-bottom: 1px solid var(--subtitle-color,#353430);
+}
+
+.header__theme-menu-button_active {
+    outline: 1px solid var(--subtitle-color,#353430);
+  }
+
+  button:focus-visible {
+  color: #353430;
+}
+
+button:hover {
+  outline: 1px solid rgba(50, 49, 45, 0.40);
+}
+
 }
 
 .page.theme_light {
@@ -84,3 +122,19 @@
 .theme_light .link-shadow {
   text-shadow: 0 3px 0 #ff8dcb;
 }
+
+.theme_light button:focus-visible {
+  color: #353430;
+}
+
+.theme_light a:focus-visible {
+  outline: 1px solid #353430;
+}
+
+.theme_light button:hover {
+  outline: 1px solid rgba(50, 49, 45, 0.40);
+}
+
+.theme_light a:hover {
+  text-decoration: underline #353430;
+} 
