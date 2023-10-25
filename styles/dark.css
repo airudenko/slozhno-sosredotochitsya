@@ -1,9 +1,9 @@
-
 :root.theme-dark {
   --title-color: #db00ff;
   --subtitle-color: #000028;
   --accent-color: #ff0070;
   --bacground-color: #000028;
+  --text-color: #f1b2ce;
 }
 
 .page.theme_dark {
@@ -12,7 +12,6 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-image: url(../images/cover-image-dark.png);
-  
 }
 
 .theme_dark .decoration-elements:before {
@@ -58,25 +57,25 @@
 
 .theme_dark a:hover {
   text-decoration: underline #f1b2ce;
-} 
+}
 
 .theme_dark .header__title,
 .theme_dark .footer__text {
   color: #db00ff;
 }
 
-.theme_dark .title-decor{
+.theme_dark .title-decor {
   background-color: #ff0070;
 }
 
 .theme_dark .header__subtitle,
 .theme_dark .section__cards-subtitle {
-   color: #000028;
-  }
+  color: #000028;
+}
 
 .theme_dark .link-shadow {
-    text-shadow: 0 3px 0 #ff0070;
-  }
+  text-shadow: 0 3px 0 #ff0070;
+}
 
 .theme_dark .header__decoration-conteiner {
   visibility: visible;

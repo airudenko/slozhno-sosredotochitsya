@@ -44,16 +44,16 @@
   top: 0;
   z-index: 1;
   padding-left: 15px;
-  border-inline-end: 1px solid #ff0070;
-  border-top: 1px solid #ff0070;
+  border-inline-end: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
 }
 
 .decoration-elements:after {
   left: 10;
   bottom: 8;
   z-index: 1;
-  border-inline-start: 1px solid #ff0070;
-  border-bottom: 1px solid #ff0070;
+  border-inline-start: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .header__theme-conteiner {
@@ -92,7 +92,7 @@
 
 .header__theme-menu-button,
 .header__decoration-conteiner-text {
-  color: #ff0070;
+  color: var(--accent-color);
 }
 
 .header__decoration-conteiner-circle::after {
@@ -100,11 +100,11 @@
   position: absolute;
   left: 41px;
   top: 7px;
-  border: 1px solid #ff0070;
+  border: 1px solid var(--accent-color);
   border-radius: 9px;
   width: 13px;
   height: 13px;
-  background-color: #ff0070;
+  background-color: var(--accent-color);
   filter: blur(2px);
 }
 
@@ -127,7 +127,7 @@
   font-family: IBM Plex Mono;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   color: var(--title-color);
-  text-shadow: 4px 4px 0 #ff0070;
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .header__subtitle {
@@ -136,6 +136,7 @@
   font-family: IBM Plex Mono;
   min-width: 364px;
   font-weight: 700;
+  line-height: 23.4px;
 }
 
 .header__subtitle,
@@ -151,8 +152,8 @@
   padding: 41px 20px 20px 20px;
   min-width: 1011px;
 }
-.padding-three {
-  padding-top: 10px;
+.margin-three {
+  margin-top: 10px;
 }
 
 .padding-two {
@@ -171,7 +172,7 @@
 }
 
 .section__cards-title {
-  color: #ff0070;
+  color: var(--accent-color);
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-weight: 700;
@@ -197,10 +198,11 @@
 }
 
 .section__cards-text {
-  color: #f1b2ce;
+  color: var(--text-color);
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-weight: 400;
+  line-height: 23.4px;
 }
 
 .padding-text {
@@ -302,23 +304,23 @@ img {
   text-align: center;
   padding-block-start: 304px;
   padding-block-end: 243px;
-  text-shadow: 4px 4px 0 #ff0070;
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid #ff0070;
+  outline: 1px solid var(--accent-color);
   padding: 2px 13px 2px 13px;
   pointer-events: none;
 }
 
 button:focus-visible {
-  color: #ff0070;
+  color: var(--accent-color);
   text-decoration: underline;
   outline: none;
 }
 
 a:focus-visible {
-  outline: 1px solid #f1b2ce;
+  outline: 1px solid var(--text-color);
 }
 
 button:hover {
@@ -328,7 +330,7 @@ button:hover {
 }
 
 a:hover {
-  text-decoration: underline #f1b2ce;
+  text-decoration: underline var(--text-color);
 }
 
 @media (768px <= width < 1024px) {
@@ -386,8 +388,8 @@ a:hover {
   .section__cards-two {
     gap: 18px;
   }
-  .padding-three {
-    padding-top: 11px;
+  .margin-three {
+    margin-top: 11px;
   }
   .margin-bottom {
     margin-bottom: -3px;
@@ -417,7 +419,7 @@ a:hover {
 
   .header__theme-conteiner {
     flex-direction: column-reverse;
-    gap: 150px;
+    /* gap: 150px; */
     align-items: flex-end;
     gap: 40px;
   }
@@ -447,7 +449,7 @@ a:hover {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     left: 0;
     top: 228px;
-    line-height: 80%;
+    line-height: 82.5%;
   }
 
   .header__subtitle {
@@ -486,7 +488,7 @@ a:hover {
     padding-top: 10px;
   }
 
-  .padding-three {
+  .margin-three {
     padding-top: 11px;
   }
 
