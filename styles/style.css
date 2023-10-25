@@ -462,7 +462,8 @@ a:hover {
   }
 
   .section__cards {
-    gap: 52px;
+    /* gap: 52px; */
+    gap: 50px;
   }
 
   .section__cards-one {
