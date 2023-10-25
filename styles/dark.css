@@ -36,6 +36,14 @@
   outline: 1px solid #ff0070;
 }
 
+.theme_dark .header__title{
+  text-shadow: 4px 4px 0 #ff0070;
+}
+
+.header__decoration-conteiner-text {
+    color: #ff0070;
+}
+
 .theme_dark .section__cards-title {
   color: #ff0070;
 }
@@ -79,4 +87,8 @@
 
 .theme_dark .header__decoration-conteiner {
   visibility: visible;
+}
+
+.theme_dark .footer__text{
+  text-shadow: 4px 4px 0 #ff0070;
 }
