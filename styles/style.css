@@ -464,7 +464,7 @@ a:hover {
   .section__cards {
     /* gap: 52px; */
     /* gap: 50px; */
-    gap: 48px;
+    gap: 44px;
   }
 
   .section__cards-one {
@@ -491,7 +491,8 @@ a:hover {
   }
 
   .margin-three {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    margin-top: 8px;
   }
 
   .width {
