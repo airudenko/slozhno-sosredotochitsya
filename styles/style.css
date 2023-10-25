@@ -409,7 +409,7 @@ a:hover {
   }
 }
 
-@media (375px <= width < 768px) {
+  @media (375px <= width < 768px) {
   .header {
     min-width: 375px;
     padding: 12px 12px 0px 11px;
@@ -419,7 +419,6 @@ a:hover {
 
   .header__theme-conteiner {
     flex-direction: column-reverse;
-    /* gap: 150px; */
     align-items: flex-end;
     gap: 40px;
   }
@@ -462,9 +461,10 @@ a:hover {
   }
 
   .section__cards {
-    /* gap: 52px; */
-    /* gap: 50px; */
     gap: 50px;
+  }
+  .section__cards-conteiner {
+    gap: 20px;
   }
 
   .section__cards-one {
@@ -472,18 +472,15 @@ a:hover {
   }
   .section__cards-three {
     flex-direction: column;
+    gap: 19px;
   }
 
   .section__cards-desc {
     min-width: 356px;
   }
 
-  /* .margin-bottom {
-    margin-bottom: -3px;
-  } */
-
   .padding-text {
-    padding-block-start: 12px;
+    padding-block-start: 10px;
   }
 
   .padding-two {
@@ -491,13 +488,11 @@ a:hover {
   }
 
   .margin-three {
-    /* margin-top: 10px; */
-    margin-top: 8px;
+    margin-top: 10px;
   }
 
   .width {
-    /* gap: 19px; */
-     gap: 20px;
+    gap: 20px;
   }
 
   .flex-direction {
@@ -507,11 +502,14 @@ a:hover {
   .section__cards-title {
     min-width: 355px;
   }
+
+  .margin-text {
+    margin-block-end: 20px;
+  }
+
   .styles {
-    /* margin-block-start: 52px; */
-     margin-block-start: 50px;
-    /* margin-block-end: 9px; */
-     margin-block-end: 8px;
+    margin-block-start: 50px;
+    margin-block-end: 10px;
   }
 
   .section__gallery {
