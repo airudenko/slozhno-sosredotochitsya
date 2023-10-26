@@ -68,8 +68,9 @@
 }
 
 .theme_light .header__theme-menu-button {
-  color: var(--subtitle-color);
+  color: #353430;
 }
+
 .theme_light .header__theme-menu-button_active {
   outline: 1px solid #353430;
 }
