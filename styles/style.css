@@ -1,6 +1,5 @@
 .page {
   min-inline-size: 375px;
-  /* max-inline-size: 1024px; */
   background-image: var(--bg-img);
   width: 100%;
   background-repeat: no-repeat;
@@ -25,15 +24,6 @@
   height: 100vh;
 }
 
-/* .header {
-position: relative;
-} */
-
-/* .decorated-zone {
-  position: relative;
-  text-decoration: none;
-} */
-
 .decorated-zone:before,
 .decorated-zone:after {
   display: inline-block;
@@ -43,15 +33,12 @@ position: relative;
   content: "";
   opacity: 2;
   z-index: -1;
-  /* inset: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem); */
 }
 
 .decorated-zone:before {
   inset-inline-end: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
   inset-block-start: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
-  /* inset: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem); */
   z-index: 1;
-  /* padding-left: 15px; */
   border-inline-end: 1px solid var(--accent-color);
   border-top: 1px solid var(--accent-color);
 }
@@ -59,11 +46,9 @@ position: relative;
 .decorated-zone:after {
   inset-inline-start: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
   inset-block-end: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
-  /* inset: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem); */
   z-index: 1;
   border-inline-start: 1px solid var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
-
   position: absolute;
 }
 
@@ -120,7 +105,6 @@ position: relative;
 }
 
 .header__text {
-  /* position: relative; */
   padding-block-start: 24%;
   display: grid;
   grid-template-columns: 1fr 491px;
@@ -135,7 +119,6 @@ position: relative;
   position: absolute;
   left: 0px;
   top: 282px;
-  /* top: 6px; */
   grid-area: header;
   font-family: IBM Plex Mono;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -162,7 +145,6 @@ position: relative;
 }
 
 .section {
-  /* padding: 41px 20px 20px 20px; */
   padding: 41px 20px 0 20px;
   min-width: 1011px;
 }
@@ -309,7 +291,6 @@ img {
   font-weight: 700;
   line-height: 82.5%;
   text-align: center;
-  /* padding-block-start: 304px; */
   padding-block-start: 259px;
   padding-block-end: 243px;
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -455,7 +436,6 @@ a:hover {
   .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     left: 10px;
-    /* top: 228px; */
     top: 239px;
     line-height: 82.5%;
   }
@@ -523,8 +503,6 @@ a:hover {
 
   .footer {
     min-width: 375px;
-    /* padding: 23px 12px 34px 9px; */
-    /* padding: 10px 12px 34px 10px; */
     padding: 0 12px;
     min-height: 667px;
     position: relative;
