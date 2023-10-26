@@ -12,12 +12,12 @@
   --bg-img: url(../images/cover-image-dark.png);
 }
 
-.theme_dark .decoration-elements:before {
+.theme_dark .decorated-zone:before {
   border-inline-end: 1px solid #ff0070;
   border-top: 1px solid #ff0070;
 }
 
-.theme_dark .decoration-elements:after {
+.theme_dark .decorated-zone:after {
   border-inline-start: 1px solid #ff0070;
   border-bottom: 1px solid #ff0070;
 }
