@@ -109,7 +109,8 @@
 }
 
 .theme_light .header__subtitle,
-.theme_light .section__cards-subtitle {
+.theme_light .section__cards-subtitle,
+.theme_light .section__cards-one-subtitle {
   color: #353430;
 }
 

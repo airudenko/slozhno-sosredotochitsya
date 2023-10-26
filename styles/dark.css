@@ -76,7 +76,8 @@
 }
 
 .theme_dark .header__subtitle,
-.theme_dark .section__cards-subtitle {
+.theme_dark .section__cards-subtitle,
+.theme_dark .section__cards-one-subtitle {
   color: #000028;
 }
 
