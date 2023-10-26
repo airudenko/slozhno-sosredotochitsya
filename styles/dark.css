@@ -1,10 +1,12 @@
-/* :root.theme-dark {
+:root.theme-dark {
   --title-color: #db00ff;
   --subtitle-color: #000028;
   --accent-color: #ff0070;
   --bacground-color: #000028;
   --text-color: #f1b2ce;
-} */
+  --bg-img: url(../images/cover-image-dark.png);
+}
+
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
@@ -12,11 +14,6 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-image: url(../images/cover-image-dark.png);
-  --title-color: #db00ff;
-  --subtitle-color: #000028;
-  --accent-color: #ff0070;
-  --bacground-color: #000028;
-  --text-color: #f1b2ce;
 }
 
 .theme_dark .decoration-elements:before {

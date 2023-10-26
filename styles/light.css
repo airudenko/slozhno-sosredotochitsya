@@ -11,10 +11,11 @@
     --subtitle-color: #353430;
     --accent-color: #ff8dcb;
     --bacground-color: #fff1f7;
+    --bg-img: url(../images/cover-image-light.png);
   }
 
   .page {
-    background-image: url(../images/cover-image-light.png);
+    background-image: var(--bg-img);
   }
 
   .header__decoration-conteiner {
