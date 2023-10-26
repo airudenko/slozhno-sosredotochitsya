@@ -10,6 +10,7 @@
 
   .page {
     background-image: var(--bg-img);
+    background-color:var(--background-color);
   }
 
   .header__decoration-conteiner {
@@ -51,6 +52,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-image: url(../images/cover-image-light.png);
+   background-color:#fff1f7;
 }
 
 .theme_light .header__decoration-conteiner {

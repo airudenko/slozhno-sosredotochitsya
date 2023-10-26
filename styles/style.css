@@ -8,7 +8,7 @@
   background-attachment: fixed;
   background-size: cover;
   position: relative;
-  background-color: #00183f;
+  background-color:var(--background-color);
 }
 
 .header {

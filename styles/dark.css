@@ -17,10 +17,11 @@
   --title-color: #db00ff;
   --subtitle-color: #000028;
   --accent-color: #ff0070;
-  --background-color: #000028;
+  /* --background-color: #000028; */
   --text-color: #f1b2ce;
+  --background-color:#00183f;
   --bg-img: url(../images/cover-image-dark.png);
-  background-color: #00183f;
+  /* background-color: #00183f; */
 }
 
 .theme_dark .decoration-elements:before {
