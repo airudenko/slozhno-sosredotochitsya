@@ -139,14 +139,16 @@
 .header__text {
   /* padding-block-start: 24%; */
   /* padding-block-start: 15%; */
-  padding-block-start: 276px;
+  /* padding-block-start: 276px; */
+  padding-block-start: 27%;
   display: grid;
   grid-template-columns: 1fr 491px;
   grid-template-areas:
     "header header"
     "- text";
-  padding-block-end: 90px;
-  gap: 113px;
+  /* padding-block-end: 90px; */
+  /* gap: 113px; */
+   gap: 118px;
 }
 
 .header__title {
