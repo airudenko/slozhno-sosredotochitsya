@@ -4,5 +4,9 @@
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
   --bg-img: url(../images/cover-image-dark.png);
-  --background-color:#00183f;
+  --background-color: #00183f;
+  --font-family: "IBM Plex Mono", monospace;
+  --hover-outline: rgba(255, 0, 112, 0.4);
+  --decorated-color: #ff0070;
+  --title-shadow: #ff0070;
 }

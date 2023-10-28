@@ -5,44 +5,48 @@
     --accent-color: #ff8dcb;
     --background-color: #fff1f7;
     --bg-img: url(../images/cover-image-light.png);
+    --hover-outline: rgba(50, 49, 45, 0.4);
+    --decorated-color: #353430;
+    --title-shadow: #ff0070;
+    --text-color: #353430;
   }
 
-  .page {
+  /* .page {
     background-image: var(--bg-img);
     background-color: var(--background-color);
-  }
+  } */
 
   .header__decoration-conteiner {
     visibility: hidden;
   }
 
-  .header__theme-menu-button,
+  /* .header__theme-menu-button,
   .section__cards-text,
   .section__cards-title {
-    color: var(--subtitle-color, #353430);
-  }
+    color: var(--text-color, #353430);
+  } */
 
-  .decorated-zone:before {
-    border-inline-end: 1px solid var(--subtitle-color, #353430);
-    border-top: 1px solid var(--subtitle-color, #353430);
+  /* .decorated-zone:before {
+    border-inline-end: 1px solid var(--decorated-color, #353430);
+    border-top: 1px solid var(--decorated-color, #353430);
   }
 
   .decorated-zone:after {
-    border-inline-start: 1px solid var(--subtitle-color, #353430);
-    border-bottom: 1px solid var(--subtitle-color, #353430);
-  }
+    border-inline-start: 1px solid var(--decorated-color, #353430);
+    border-bottom: 1px solid var(--decorated-color, #353430);
+  } */
 
-  .header__theme-menu-button_active {
+  /* .header__theme-menu-button_active {
     outline: 1px solid var(--subtitle-color, #353430);
   }
 
-  button:focus-visible {
-    color: #353430;
+  .header__theme-menu-button:focus-visible {
+    color: var(--subtitle-color, #353430);
   }
 
-  button:hover {
-    outline: 1px solid rgba(50, 49, 45, 0.4);
-  }
+  .header__theme-menu-button:hover {
+     outline: 1px solid var(--hover-outline, rgba(50, 49, 45, 0.4));
+  } */
 }
 
 .page.theme_light {
@@ -50,15 +54,25 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-image: url(../images/cover-image-light.png);
-  background-color: #fff1f7;
+  /* background-image: url(../images/cover-image-light.png);
+  background-color: #fff1f7; */
+
+  --title-color: #ffc2e6;
+  --subtitle-color: #353430;
+  --accent-color: #ff8dcb;
+  --background-color: #fff1f7;
+  --bg-img: url(../images/cover-image-light.png);
+  --hover-outline: rgba(50, 49, 45, 0.4);
+  --decorated-color: #353430;
+  --title-shadow: #ff0070;
+  --text-color: #353430;
 }
 
 .theme_light .header__decoration-conteiner {
   visibility: hidden;
 }
 
-.theme_light .decorated-zone:before {
+/* .theme_light .decorated-zone:before {
   border-inline-end: 1px solid #353430;
   border-top: 1px solid #353430;
 }
@@ -83,20 +97,20 @@
   color: #353430;
 }
 
-.theme_light button:focus-visible {
+.theme_light .header__theme-menu-button:focus-visible {
   color: #353430;
 }
 
-.theme_light a:focus-visible {
+.theme_light .header__theme-menu-button:focus-visible {
   outline: 1px solid #353430;
 }
 
-.theme_light button:hover {
+.theme_light .header__theme-menu-button:hover {
   outline: 1px solid rgba(50, 49, 45, 0.4);
 }
 
-.theme_light a:hover {
-  text-decoration: underline #353430;
+.theme_light .link:hover {
+   border-block-end:1px solid #353430;
 }
 
 .theme_light .header__title,
@@ -114,6 +128,6 @@
   color: #353430;
 }
 
-.theme_light .link-shadow {
+.theme_light .link {
   text-shadow: 0 3px 0 #ff8dcb;
-}
+} */
