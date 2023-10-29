@@ -323,8 +323,8 @@
 @media (width < 1024px) {
   .header,
   .footer {
-    min-height: 1024px;
-    min-width: 768px;
+    min-block-size: 1024px;
+    min-inline-size: 768px;
   }
 
   .header__theme-conteiner {
@@ -340,7 +340,7 @@
   }
 
   .header__subtitle {
-    margin-top: 44px;
+    margin-block-start: 44px;
     max-inline-size: 364px;
   }
 
@@ -349,7 +349,7 @@
     grid-template-columns: 1fr 363px;
   }
   .section__cards-title {
-    min-width: 236px;
+    min-inline-size: 236px;
   }
 
   .section__cards-conteiner {
@@ -369,7 +369,7 @@
 
   .header {
     padding: 10px 10px 0px 10px;
-    min-height: 668px;
+    min-block-size: 668px;
     margin-block-end: 0;
   }
 
@@ -381,7 +381,7 @@
   }
 
   .section__cards-title {
-    min-width: 355px;
+    min-inline-size: 355px;
   }
 
   .section__cards-three {
@@ -414,14 +414,15 @@
       "four"
       "five";
   }
+  
   .cards__img {
     min-inline-size: 354.999px;
   }
 
   .header,
   .footer {
-    min-width: 375px;
-    min-height: 667px;
+    min-inline-size: 375px;
+    min-block-size: 667px;
   }
 
   .section__cards {
@@ -436,13 +437,16 @@
   .section__gallery {
     margin-block-end: 39px;
   }
+
   .footer__text {
     padding-top: 227px;
   }
+
   .decorated-zone:before {
     inset-inline-end: 10px;
     inset-block-start: 10px;
   }
+
   .decorated-zone:after {
     inset-inline-start: 10px;
     inset-block-end: 10px;
